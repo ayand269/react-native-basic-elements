@@ -19,6 +19,6 @@ npm install --save react-native-vector-icons
 After installing react-native-vector-icons you have to configure it. Read the configuration process of [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 
 ## Components
-* [Icon]()
+* [Icon](doc/Icon-component.md)
 * [AppTextInput]()
 * [AppButton]()

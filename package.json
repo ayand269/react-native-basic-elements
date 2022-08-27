@@ -52,5 +52,12 @@
   },
   "dependencies": {
     "@types/react-native-vector-icons": "^6.4.11"
-  }
+  },
+  "keywords": [
+    "react-native",
+    "react-native-elements",
+    "react-native-basic-elements",
+    "react-native-icon",
+    "custom-textinput"
+  ]
 }

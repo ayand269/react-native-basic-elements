@@ -20,5 +20,5 @@ After installing react-native-vector-icons you have to configure it. Read the co
 
 ## Components
 * [Icon](doc/Icon-component.md)
-* [AppTextInput]()
+* [AppTextInput](doc/app-text-input-component.md)
 * [AppButton]()

@@ -17,3 +17,11 @@ const MyComponent = () => {
     )
 }
 ```
+# Properties
+| Props                        | Description                                                                                  | Default   |
+|------------------------------|----------------------------------------------------------------------------------------------|-----------|
+|**`value`**                   | This is the default value of text input.                                                     | null      |
+|**`title`**                   | This title/heading on text input.                                                            | ''        |
+|**`inputStyle`**.             | This is the style of the text input only                                                     | none      |
+|**`mainContainerStyle`**      | It is the style of the whole container including **`title`** .                               | none      |
+|**`leftIcon`**                | This is for Icon before text input. It takes [Icon Props](docs/Icon-component.md#properties) | null      |

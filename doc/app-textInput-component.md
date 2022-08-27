@@ -24,4 +24,4 @@ const MyComponent = () => {
 |**`title`**                   | This title/heading on text input.                                                            | ''        |
 |**`inputStyle`**.             | This is the style of the text input only                                                     | none      |
 |**`mainContainerStyle`**      | It is the style of the whole container including **`title`** .                               | none      |
-|**`leftIcon`**                | This is for Icon before text input. It takes [Icon Props](docs/Icon-component.md#properties) | null      |
+|**`leftIcon`**                | This is for Icon before text input. It takes [Icon Props](Icon-component.md#properties) | null      |

@@ -8,9 +8,10 @@ import {AppButton} from 'react-native-basic-elements';
 const MyComponent = () => {
     return (
         <AppButton
+            shadow = {true}
             title = "My Button"
             buttonIcon = {{
-                position: 'right',
+                position: 'left',
                 name: 'home',
                 type: 'Ionicon'
             }}
@@ -19,7 +20,8 @@ const MyComponent = () => {
     )
 }
 ```
-<!-- image -->
+
+![Screenshot 2022-08-29 at 2 32 11 AM](https://user-images.githubusercontent.com/59437316/187094383-460f23c1-4919-40dc-9041-bf1d0b887a3f.png)
 # Properties
 | Props                | Description                                                                         | Default   |
 |----------------------|-------------------------------------------------------------------------------------|-----------|

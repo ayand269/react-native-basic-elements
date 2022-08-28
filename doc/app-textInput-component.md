@@ -47,5 +47,6 @@ const MyComponent = () => {
 |------------------------------|-------------------------------------------------------------------------------------|
 |**`onChangeText`**            | Callback that is called when the text input's text changes. Changed text is passed as a single string argument to the callback handler.  |
 |**`onRightIconPress`**        | Callback that is called when the **`rightAction`** press.                           |
+
 This all props are accepted in this component and all TextInput props are also available.
 

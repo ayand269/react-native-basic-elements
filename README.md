@@ -46,6 +46,8 @@ const MyComponent = () => {
 }
 ```
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/59437316/187244418-f82ea90e-3df1-4453-ab92-64e262f3d68d.gif)
+
 ## Properties
 
 | Props             | Description                                                                         | Default   |
@@ -81,6 +83,9 @@ const MyComponent = () => {
     )
 }
 ```
+
+![ezgif com-gif-maker-2](https://user-images.githubusercontent.com/59437316/187244725-4aa59360-cf7d-4c2f-ab89-113f82890aba.gif)
+
 
 ## Properties
 

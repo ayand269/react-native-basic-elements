@@ -22,3 +22,106 @@ After installing react-native-vector-icons you have to configure it. Read the co
 * [Icon](https://github.com/ayand269/react-native-basic-elements/blob/master/doc/Icon-component.md)
 * [AppTextInput](https://github.com/ayand269/react-native-basic-elements/blob/master/doc/app-textInput-component.md)
 * [AppButton](https://github.com/ayand269/react-native-basic-elements/blob/master/doc/app-button-component.md)
+* [CheckBox](#checkbox-component)
+* [RadioButton](#radiobutton-component)
+* [Card](#card-component)
+
+
+# CheckBox Component
+
+## Example
+```js
+import React, { useState } from 'react'
+import {CheckBox} from 'react-native-basic-elements';
+
+const MyComponent = () => {
+    const [check, setCheck] = useState(false);
+    return (
+        <CheckBox
+            checked = {check}
+            onChange = {(val) => setCheck(val)}
+            size = {25}
+        >
+    )
+}
+```
+
+## Properties
+
+| Props             | Description                                                                         | Default   |
+|-------------------|-------------------------------------------------------------------------------------|-----------|
+| **`checked`**     | This is the default value of CheckBox. Props type **`boolean`**                     | false     |
+| **`activeColor`** | This color show when **`checked`** is set to **`true`**                             | 'blue'    |
+| **`inactiveColor`**| This color show when **`checked`** is set to **`false`**                           | '#999'    |
+| **`tintColor`**   | Color of check icon.                                                                | '#fff'    |
+| **`size`**        | Size of checkBox                                                                    | 16        |
+| **`containerStyle`**| With this you can change the style of checkbox                                    | undefined |
+
+## Method
+| Props                        | Description                                                                         |
+|------------------------------|-------------------------------------------------------------------------------------|
+| **`onChnage`**               | This callback function is called when you click on checkbox. It returns boolean value|
+
+
+# RadioButton Component
+
+## Example
+```js
+import React, { useState } from 'react'
+import {RadioButton} from 'react-native-basic-elements';
+
+const MyComponent = () => {
+    const [selected, setSelected] = useState(false);
+    return (
+        <RadioButton
+            selected = {selected}
+            onChange = {(val) => setSelected(val)}
+            size = {25}
+        >
+    )
+}
+```
+
+## Properties
+
+| Props             | Description                                                                         | Default   |
+|-------------------|-------------------------------------------------------------------------------------|-----------|
+| **`selected`**    | This is the default value of RadioButton. Props type **`boolean`**                  | false     |
+| **`activeColor`** | This color show when **`selected`** is set to **`true`**                            | 'blue'    |
+| **`inactiveColor`**| This color show when **`selected`** is set to **`false`**                          | '#999'    |
+| **`size`**        | Size of RadioButton                                                                 | 20        |
+| **`containerStyle`**| With this you can change the style of RadioButton                                 | undefined |
+
+## Method
+| Props                        | Description                                                                         |
+|------------------------------|-------------------------------------------------------------------------------------|
+| **`onChnage`**               | This callback function is called when you click on RadioButton. It returns boolean value|
+
+
+# Card Component
+This is a card with pre-styled and clickable.
+
+## Example
+```js
+import {Card} from 'react-native-basic-elements';
+
+const MyComponent = () => {
+    return (
+        <Card>
+            {/* Your JSX Elements */}
+        </Card>
+    )
+}
+```
+
+## Properties
+
+| Props             | Description                                                                         | Default   |
+|-------------------|-------------------------------------------------------------------------------------|-----------|
+| **`style`**       | For styling the card.                                                               | undefined |
+| **`shadow`**      | This is for enabling or disabling pre defined shadow. Also you can overwrite them with defining shadow in **`style`**. It take **`boolean`** value.  | true   |
+
+And it also support all **`View`** and **`Pressable`** props.
+
+
+

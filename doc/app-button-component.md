@@ -42,8 +42,7 @@ const MyComponent = () => {
     )
 }
 ```
-
-
+![Screenshot 2022-08-30 at 10 41 37 PM](https://user-images.githubusercontent.com/59437316/187531143-67c1e884-94a7-49ce-b9ca-c13eb120c971.png)
 
 # Properties
 | Props                | Description                                                                         | Default   |

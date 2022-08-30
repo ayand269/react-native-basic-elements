@@ -25,7 +25,7 @@ After installing react-native-vector-icons you have to configure it. Read the co
 * [CheckBox](#checkbox-component)
 * [RadioButton](#radiobutton-component)
 * [Card](#card-component)
-* [StatusBar]()
+* [StatusBar](#statusbar-component)
 * [List]()
 * [Header]()
 * [Accordion]()

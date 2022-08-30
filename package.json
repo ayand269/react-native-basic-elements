@@ -1,6 +1,6 @@
 {
   "name": "react-native-basic-elements",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This package is for easy and fun coding",
   "homepage": "https://github.com/ayand269/react-native-basic-elements#readme",
   "main": "lib/index.js",
@@ -30,6 +30,7 @@
     "metro-react-native-babel-preset": "^0.67.0",
     "react": "^17.0.2",
     "react-native": "^0.67.1",
+    "react-native-linear-gradient": "^2.6.2",
     "react-native-vector-icons": "^9.2.0",
     "react-test-renderer": "^17.0.2",
     "typescript": "^4.5.5"

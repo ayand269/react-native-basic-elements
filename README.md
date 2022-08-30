@@ -25,7 +25,11 @@ After installing react-native-vector-icons you have to configure it. Read the co
 * [CheckBox](#checkbox-component)
 * [RadioButton](#radiobutton-component)
 * [Card](#card-component)
-
+* [StatusBar]()
+* [List]()
+* [Header]()
+* [Accordion]()
+* [DropdownPicker]()
 
 # CheckBox Component
 
@@ -127,6 +131,33 @@ const MyComponent = () => {
 | **`shadow`**      | This is for enabling or disabling pre defined shadow. Also you can overwrite them with defining shadow in **`style`**. It take **`boolean`** value.  | true   |
 
 And it also support all **`View`** and **`Pressable`** props.
+
+
+# StatusBar Component
+This is for status bar that configured on android and ios both.
+
+## Example
+```js
+import {StatusBar} from 'react-native-basic-elements';
+
+const MyComponent = () => {
+    return (
+        <StatusBar
+            backgroundColor={'green'}
+            barStyle = 'light-content'
+        />
+    )
+}
+```
+## Properties
+
+| Props             | Description                                                                         | Default   |
+|-------------------|-------------------------------------------------------------------------------------|-----------|
+| **`backgroundColor`** | For statusbar color.                                                            | #fff      |
+| **`barStyle`**    | For StatusBar content color. Value type **`enum('dark-content', 'light-content')    | 'dark-content' |
+| **`hidden`**      | This is used for show or hide the statusbar.                                        | false     |
+| **`translucent`** | If the status bar is translucent. When translucent is set to true, the app will draw under the status bar. This is useful when using a semi transparent status bar color. | false |
+
 
 
 

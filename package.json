@@ -1,6 +1,6 @@
 {
   "name": "react-native-basic-elements",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This package is for easy and fun coding",
   "homepage": "https://github.com/ayand269/react-native-basic-elements#readme",
   "main": "lib/index.js",
@@ -20,6 +20,7 @@
     "@babel/core": "^7.16.12",
     "@babel/runtime": "^7.16.7",
     "@react-native-community/eslint-config": "^3.0.1",
+    "@react-native-picker/picker": "^2.4.4",
     "@types/jest": "^27.4.0",
     "@types/react-native": "^0.66.15",
     "@types/react-test-renderer": "^17.0.1",
@@ -38,7 +39,9 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-vector-icons": "*"
+    "react-native-linear-gradient": "*",
+    "react-native-vector-icons": "*",
+    "@react-native-picker/picker": "*"
   },
   "jest": {
     "preset": "react-native",
@@ -52,6 +55,7 @@
     ]
   },
   "dependencies": {
+    "@callstack/react-theme-provider": "^3.0.7",
     "@types/react-native-vector-icons": "^6.4.11"
   },
   "keywords": [

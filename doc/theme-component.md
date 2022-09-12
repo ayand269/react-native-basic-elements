@@ -1,7 +1,7 @@
 # Theme
 This is the main beauty of this package. If you properly configured the thiming color object then you don't need to think about color in dark mode or light mode. If you done the configuration then you can easily use our all component and it takes color acording to the theme object but also you can change color with the corresponding style props of the component . **` Note: We are working on adding the fonts in theme it will release in the next update. `**
 
-https://user-images.githubusercontent.com/59437316/189749566-e5f2bbf1-a43c-49d3-8b90-fc9e1533bfc2.mov
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/59437316/189750437-ed884287-4468-43ca-b19b-520301863ecf.gif)
 
 ## Example
 In **`App.js`** file.

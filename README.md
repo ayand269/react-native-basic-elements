@@ -176,7 +176,7 @@ const MyComponent = () => {
 
 # Text Components
 
-<!-- image -->
+![Screenshot 2022-09-12 at 10 47 55 PM](https://user-images.githubusercontent.com/59437316/189748956-ede274a7-4e20-4ec9-88f3-c6a0c8a97de0.png)
 
 ```js
 import {Container, Text} from 'react-native-basic-elements';
@@ -307,7 +307,7 @@ const MyComponent = () => {
 export default MyComponent;
 ```
 
-<!-- video -->
+https://user-images.githubusercontent.com/59437316/189748711-472cd4ec-0efc-4a9a-8de6-9cd1ec4782a9.mov
 
 ## Properties
 

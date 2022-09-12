@@ -307,7 +307,8 @@ const MyComponent = () => {
 export default MyComponent;
 ```
 
-https://user-images.githubusercontent.com/59437316/189748711-472cd4ec-0efc-4a9a-8de6-9cd1ec4782a9.mov
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/59437316/189750723-596ef244-5a26-46b2-b7ea-48faca118a3a.gif)
+
 
 ## Properties
 

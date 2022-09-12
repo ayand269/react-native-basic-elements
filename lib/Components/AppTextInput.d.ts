@@ -13,7 +13,7 @@ interface Props extends TextInputProps {
     allowFontScaling?: boolean;
     titleStyle?: TextStyle;
     value?: string;
-    onChangeText?: (text: string) => void;
+    onChnageText?: (text: string) => void;
 }
 declare const AppTextInput: React.FC<Props>;
 export default AppTextInput;

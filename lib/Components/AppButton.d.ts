@@ -7,7 +7,7 @@ interface buttonIcon extends PropsOfIcon {
 interface Props extends PressableProps {
     title?: string;
     shadow?: boolean;
-    containerStyle?: ViewStyle;
+    style?: ViewStyle;
     textStyle?: TextStyle;
     loader?: {
         position: 'left' | 'right';
@@ -23,6 +23,17 @@ interface Props extends PressableProps {
         radius?: number;
         foreground?: boolean;
     };
+    gradient?: boolean;
+    gradientColors?: (string | number)[];
+    gradientStart?: {
+        x: number;
+        y: number;
+    };
+    gradientEnd?: {
+        x: number;
+        y: number;
+    };
+    gradientLocation?: number[];
 }
 declare const AppButton: React.FC<Props>;
 export default AppButton;

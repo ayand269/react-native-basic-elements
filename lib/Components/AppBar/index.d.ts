@@ -2,7 +2,9 @@
 declare const AppBar: import("react").FC<{
     title?: string | undefined;
     titlePosition?: "left" | "middle" | undefined;
+    leftComponent?: "image" | "icon" | undefined;
     leftImage?: import("react-native").ImageSourcePropType | undefined;
+    leftIcon?: import("../Icon").PropsOfIcon | undefined;
     leftImageStyle?: import("react-native").ImageStyle | undefined;
     backgroundColor?: import("react-native").ColorValue | undefined;
     style?: import("react-native").ViewStyle | undefined;
@@ -16,6 +18,10 @@ declare const AppBar: import("react").FC<{
         onPress?: (() => void) | undefined;
     }[] | undefined;
     shadow?: boolean | undefined;
+    statusBarHidden?: boolean | undefined;
+    statusBarTranslucent?: boolean | undefined;
+    subTitle?: string | undefined;
+    subTitleStyle?: import("react-native").TextStyle | undefined;
 }> & {
     Back: import("react").FC<{
         title?: string | undefined;
@@ -24,7 +30,7 @@ declare const AppBar: import("react").FC<{
         style?: import("react-native").ViewStyle | undefined;
         barStyle?: "dark-content" | "light-content" | undefined;
         titleStyle?: import("react-native").TextStyle | import("react-native").ViewStyle | undefined;
-        titleType?: "image" | "text" | undefined;
+        titleType?: "image" | "text" | "textWithImage" | undefined;
         titleImage?: import("react-native").ImageSourcePropType | undefined;
         titleImageStyle?: import("react-native").ImageStyle | undefined;
         rightActions?: {
@@ -34,6 +40,11 @@ declare const AppBar: import("react").FC<{
         icon?: import("../Icon").PropsOfIcon | undefined;
         onLeftIconPress?: (() => void) | undefined;
         shadow?: boolean | undefined;
+        statusBarHidden?: boolean | undefined;
+        statusBarTranslucent?: boolean | undefined;
+        subTitle?: string | undefined;
+        subTitleStyle?: import("react-native").TextStyle | undefined;
+        imageTitleContainerStyle?: import("react-native").ViewStyle | undefined;
     }>;
 };
 export default AppBar;

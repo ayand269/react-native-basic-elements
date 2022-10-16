@@ -1,5 +1,6 @@
 import React from 'react';
 import { ColorValue, ViewStyle, TextStyle, ImageSourcePropType, ImageStyle } from 'react-native';
+import { PropsOfIcon } from '../Icon';
 declare type RightActionProps = {
     icon?: React.ReactNode;
     onPress?: () => void;
@@ -7,7 +8,9 @@ declare type RightActionProps = {
 declare type Props = {
     title?: string;
     titlePosition?: 'middle' | 'left';
+    leftComponent?: 'image' | 'icon';
     leftImage?: ImageSourcePropType;
+    leftIcon?: PropsOfIcon;
     leftImageStyle?: ImageStyle;
     backgroundColor?: ColorValue;
     style?: ViewStyle;
@@ -18,6 +21,10 @@ declare type Props = {
     titleImageStyle?: ImageStyle;
     rightActions?: RightActionProps[];
     shadow?: boolean;
+    statusBarHidden?: boolean;
+    statusBarTranslucent?: boolean;
+    subTitle?: string;
+    subTitleStyle?: TextStyle;
 };
 declare const MainAppBar: React.FC<Props>;
 export default MainAppBar;

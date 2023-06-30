@@ -25,6 +25,7 @@ declare type Props = {
     statusBarTranslucent?: boolean;
     subTitle?: string;
     subTitleStyle?: TextStyle;
+    onLeftButtonPress?: () => void;
 };
 declare const MainAppBar: React.FC<Props>;
 export default MainAppBar;

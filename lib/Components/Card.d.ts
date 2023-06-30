@@ -4,6 +4,9 @@ interface Props extends PressableProps {
     children?: ReactNode;
     style?: ViewStyle;
     shadow?: boolean;
+    elevation?: number;
+    shadowOffsetHeight?: number;
+    shadowOffsetwidth?: number;
 }
 declare const Card: React.FC<Props>;
 export default Card;

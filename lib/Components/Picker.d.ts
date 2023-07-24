@@ -13,6 +13,8 @@ interface Props extends PickerProps {
     mode?: 'dropdown' | 'dialog';
     containerStyle?: ViewStyle;
     iosModalBackGroundColor?: ColorValue;
+    textStyle?: TextStyle;
+    placeholderColor?: ColorValue;
 }
 declare const RNPicker: React.FC<Props>;
 export default RNPicker;

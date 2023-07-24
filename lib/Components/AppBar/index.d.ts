@@ -22,6 +22,7 @@ declare const AppBar: import("react").FC<{
     statusBarTranslucent?: boolean | undefined;
     subTitle?: string | undefined;
     subTitleStyle?: import("react-native").TextStyle | undefined;
+    onLeftButtonPress?: (() => void) | undefined;
 }> & {
     Back: import("react").FC<{
         title?: string | undefined;

@@ -34,6 +34,7 @@ interface Props extends PressableProps {
         y: number;
     };
     gradientLocation?: number[];
+    onPress?: () => void;
 }
 declare const AppButton: React.FC<Props>;
 export default AppButton;

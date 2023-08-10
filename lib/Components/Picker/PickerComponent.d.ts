@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextStyle, ViewStyle, ColorValue } from 'react-native';
 import { PickerProps } from '@react-native-picker/picker';
-interface Props extends PickerProps {
+declare type Props = PickerProps & {
     style?: TextStyle;
     options?: Array<any>;
     placeholder?: string;
@@ -15,6 +15,6 @@ interface Props extends PickerProps {
     iosModalBackGroundColor?: ColorValue;
     textStyle?: TextStyle;
     placeholderColor?: ColorValue;
-}
+};
 declare const RNPicker: React.FC<Props>;
 export default RNPicker;

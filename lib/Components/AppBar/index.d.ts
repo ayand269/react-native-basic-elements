@@ -46,6 +46,7 @@ declare const AppBar: import("react").FC<{
         subTitle?: string | undefined;
         subTitleStyle?: import("react-native").TextStyle | undefined;
         imageTitleContainerStyle?: import("react-native").ViewStyle | undefined;
+        leftIconContainerStyle?: import("react-native").ViewStyle | undefined;
     }>;
 };
 export default AppBar;

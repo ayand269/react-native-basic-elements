@@ -6,6 +6,7 @@ interface PropsOfIcon {
     name: string;
     color?: ColorValue;
     style?: TextStyle;
+    onPress?: () => void;
 }
 declare const Icon: React.FC<PropsOfIcon>;
 export default Icon;

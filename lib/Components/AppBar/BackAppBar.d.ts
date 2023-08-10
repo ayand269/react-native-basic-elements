@@ -24,6 +24,7 @@ declare type Props = {
     subTitle?: string;
     subTitleStyle?: TextStyle;
     imageTitleContainerStyle?: ViewStyle;
+    leftIconContainerStyle?: ViewStyle;
 };
 declare const BackAppBar: React.FC<Props>;
 export default BackAppBar;

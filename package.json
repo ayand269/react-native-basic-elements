@@ -1,6 +1,6 @@
 {
   "name": "react-native-basic-elements",
-  "version": "1.1.3",
+  "version": "1.1.5",
   "description": "This package is for easy and fun coding",
   "homepage": "https://github.com/ayand269/react-native-basic-elements#readme",
   "main": "lib/index.js",
@@ -32,7 +32,7 @@
     "react": "^17.0.2",
     "react-native": "^0.67.1",
     "react-native-linear-gradient": "^2.6.2",
-    "react-native-vector-icons": "^9.2.0",
+    "react-native-vector-icons": "^10.0.0",
     "react-test-renderer": "^17.0.2",
     "typescript": "^4.5.5"
   },
@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "@callstack/react-theme-provider": "^3.0.7",
-    "@types/react-native-vector-icons": "^6.4.11"
+    "@types/react-native-vector-icons": "^6.4.13"
   },
   "keywords": [
     "react-native",

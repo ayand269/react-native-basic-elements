@@ -21,7 +21,9 @@ After installing react-native-vector-icons you have to configure it. Read the co
 ## Components
 * [Theme](https://github.com/ayand269/react-native-basic-elements/blob/v1.0.6/doc/theme-component.md)
 * [Icon](https://github.com/ayand269/react-native-basic-elements/blob/master/doc/Icon-component.md)
-* [AppTextInput](https://github.com/ayand269/react-native-basic-elements/blob/master/doc/app-textInput-component.md)
+* [TextInput]()
+    * [AppTextInput](https://github.com/ayand269/react-native-basic-elements/blob/master/doc/app-textInput-component.md)
+    * [Outlined TextInput](https://github.com/ayand269/react-native-basic-elements/blob/master/doc/outlined-text-input.md)
 * [AppButton](https://github.com/ayand269/react-native-basic-elements/blob/master/doc/app-button-component.md)
 * [CheckBox](#checkbox-component)
 * [RadioButton](#radiobutton-component)
@@ -31,8 +33,9 @@ After installing react-native-vector-icons you have to configure it. Read the co
     * [AppBar](#appbar)
     * [AppBar.Back](#appbarback) -->
 * [List]()
-* [Accordion]()
-* [DropdownPicker]()
+* [Dropdown Picker](#dropdown-picker)
+    * [Select Dropdown](#select-dropdown)
+    * [Multi Select Dropdown](#multi-select-dropdown)
 * [Text Components](#text-components)
     * [Text](#text)
     * [Heading](#heading--subheading)
@@ -319,3 +322,151 @@ export default MyComponent;
 | **`titleStyle`**  | Style for title.                                                                    | undefined |
 | **`style`**       | Style for accordion item container                                                  | undefined |
 | **`leftSpacing`**    | If it is **`true`** then the item take some spacing from left                    | true      |
+
+# Dropdown Picker
+
+## Select Dropdown
+
+### Example
+```js
+import {Picker} from 'react-native-basic-components';
+
+const MyComponent = () => {
+    const [dropdownValue, setDropdownValue] = useState('');
+    return (
+        <Picker
+            options={[
+                {
+                    label: 'Item 1',
+                    value: 'item1'
+                },
+                {
+                    label: 'Item 2',
+                    value: 'item2'
+                },
+                {
+                    label: 'Item 3',
+                    value: 'item3'
+                },
+                {
+                    label: 'Item 4',
+                    value: 'item4'
+                },
+                {
+                    label: 'Item 5',
+                    value: 'item5'
+                },
+            ]}
+            placeholder="PlaceHolder"
+            textStyle={{
+                fontSize: 15
+            }}
+            selectedValue={dropdownValue}
+            onValueChange={(val) => setDropdownValue(val)}
+        />
+    )
+}
+```
+
+## Properties
+
+| Props             | Description                                                                         | Default   |
+|-------------------|-------------------------------------------------------------------------------------|-----------|
+| **`style`**       | Style of the Picker Component.                                          | undefined |
+| **`options`**     | It takes an **`Array`** as options for the picker.                      | []        |
+| **`placeholder`**  | Placeholder for the Picker Input                                       | undefined |
+| **`showPlaceholder`**       | Show the placeholder or not.                                  | undefined |
+| **`labelKey`**    | It takes that key as the lebel key from **`options`** Array             |'label'    |
+| **`valueKey`**    | It takes that key as the value key from **`options`** Array             |'value'    |
+| **`selectedValue`**    | It takes the defalut value(Required)                               |''         |
+| **`mode`**  | This is the mode of the Picker. Value type **`enum('dropdown', 'dialog')      |dropdown   |
+| **`containerStyle`**  | This is the Style of the input container                            |undefined  |
+| **`iosModalBackGroundColor`** | This is for ios. It change the modal background color.                              |Theme card color  |
+| **`onValueChange`** | Callback that is called when the picker change it's value. Changed item value is passed as a single string argument to the callback handler.              |undefined   |
+
+
+## Multi Select Dropdown
+
+![WhatsApp Video 2023-08-16 at 5 19 35 PM](https://github.com/ayand269/react-native-basic-elements/assets/59437316/061fb830-eddf-4fcf-8208-6cc8bdc69689)
+
+### Example
+```js
+import {Picker} from 'react-native-basic-components';
+
+const MyComponent = () => {
+    const [dropdownValue, setDropdownValue] = useState([]);
+    return (
+        <Picker.Multi
+                options={[
+                    {
+                        label: 'Item 1',
+                        value: 'item1'
+                    },
+                    {
+                        label: 'Item 2',
+                        value: 'item2'
+                    },
+                    {
+                        label: 'Item 3',
+                        value: 'item3'
+                    },
+                    {
+                        label: 'Item 4',
+                        value: 'item4'
+                    },
+                    {
+                        label: 'Item 5',
+                        value: 'item5'
+                    },
+                    {
+                        label: 'Item 6',
+                        value: 'item6'
+                    },
+                    {
+                        label: 'Item 7',
+                        value: 'item7'
+                    },
+                    {
+                        label: 'Item 8',
+                        value: 'item8'
+                    },
+                    {
+                        label: 'Item 9',
+                        value: 'item9'
+                    },
+                    {
+                        label: 'Item 10',
+                        value: 'item10'
+                    },
+                ]}
+                returnDataType={(item) => { return {value: item.value} }}
+                onValueChange={(val) => {
+                    setDropdownValue(val)
+                }}
+                selectedValues={dropdownValue}
+            />
+    )
+}
+```
+
+## Properties
+
+| Props             | Description                                                                         | Default   |
+|-------------------|-------------------------------------------------------------------------------------|-----------|
+| **`modalContainerStyle`** | Style for modal container.                                      | undefined |
+| **`options`**     | It takes an **`Array`** as options for the picker.                      | []        |
+| **`placeholder`**  | Placeholder for the Picker Input                                       | undefined |
+| **`placeholderStyle`**  | Style for picker placeholder.                                     | undefined |
+| **`labelKey`**    | It takes that key as the lebel key from **`options`** Array             |'label'    |
+| **`valueKey`**    | It takes that key as the value key from **`options`** Array             |'value'    |
+| **`selectedValues`**    | It takes the defalut value(Required)                              |[]         |
+| **`closeIcon`**  | Modal Close Icon. Type of [Icon Props](Icon-component.md#properties)     |undefined  |
+| **`modalHeading`**  | Heading of the Selection modal                                        |'Choose'   |
+| **`modalHeadingTitle`**  | Heading text style of the Selection modal                        |undefined  |
+| **`itemContainerStyle`** | This is the Item List style.                                     |undefined  |
+| **`itemTextStyle`** | This is the Item List text style.                                     |undefined  |
+| **`selectedIcon`** | This is the selected item icon. Type of [Icon Props](Icon-component.md#properties)       |undefined  |
+| **`itemTextStyle`** | This is the Item List text style.                                     |undefined  |
+| **`onValueChange`** | Callback that is called when the picker change it's value. Changed item value is passed as a single string argument to the callback handler.              |undefined   |
+| **`returnDataType`** | Takes an item from **`options`**, and which data type you return that will be give as value in **`onValueChange`**.            |(item) => {return item[valueKey]}   |
+

@@ -90,13 +90,13 @@ const Test = () => {
                                 marginRight: 10
                             }}
                         />,
-                        onPress: () => console.log("bal")
+                        onPress: () => console.log("This is Notification")
                     },
                     {
                         icon: <Icon
                             name='cart'
                         />,
-                        onPress: () => console.log("bal")
+                        onPress: () => console.log("This is cart")
                     }
                 ]}
             />

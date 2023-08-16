@@ -16,8 +16,11 @@ declare const AppTextInput: import("react").FC<import("react-native").TextInputP
     Outlined: import("react").FC<import("react-native").TextInputProps & {
         placeholder?: string | undefined;
         borderWidth?: number | undefined;
+        activeBorderColor?: import("react-native").ColorValue | undefined;
+        inactiveBorderColor?: import("react-native").ColorValue | undefined;
         containerStyle?: import("react-native").ViewStyle | undefined;
         placeholderTextStyle?: import("react-native").TextStyle | undefined;
+        placeholderTextColor?: import("react-native").ColorValue | undefined;
         rightAction?: import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>> | undefined;
         rightActionButtonStyle?: import("react-native").ViewStyle | undefined;
         onRightIconPress?: (() => void) | undefined;

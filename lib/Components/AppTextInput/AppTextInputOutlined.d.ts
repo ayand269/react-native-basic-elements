@@ -3,8 +3,11 @@ import { TextInputProps, ViewStyle, TextStyle, ColorValue } from 'react-native';
 declare type Props = TextInputProps & {
     placeholder?: string;
     borderWidth?: number;
+    activeBorderColor?: ColorValue;
+    inactiveBorderColor?: ColorValue;
     containerStyle?: ViewStyle;
     placeholderTextStyle?: TextStyle;
+    placeholderTextColor?: ColorValue;
     rightAction?: ReactElement;
     rightActionButtonStyle?: ViewStyle;
     onRightIconPress?: () => void;

@@ -469,3 +469,4 @@ const MyComponent = () => {
 | **`itemTextStyle`** | This is the Item List text style.                                     |undefined  |
 | **`onValueChange`** | Callback that is called when the picker change it's value. Changed item value is passed as a single string argument to the callback handler.              |undefined   |
 | **`returnDataType`** | Takes an item from **`options`**, and which data type you return that will be give as value in **`onValueChange`**.            |(item) => {return item[valueKey]}   |
+

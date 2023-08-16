@@ -387,6 +387,8 @@ const MyComponent = () => {
 
 ## Multi Select Dropdown
 
+![WhatsApp Video 2023-08-16 at 5 19 35 PM](https://github.com/ayand269/react-native-basic-elements/assets/59437316/061fb830-eddf-4fcf-8208-6cc8bdc69689)
+
 ### Example
 ```js
 import {Picker} from 'react-native-basic-components';

@@ -1,6 +1,7 @@
 /// <reference types="react" />
 declare const AppTextInput: import("react").FC<import("react-native").TextInputProps & {
     inputStyle?: import("react-native").TextStyle | import("react-native").ViewStyle | undefined;
+    style?: import("react-native").TextStyle | import("react-native").ViewStyle | undefined;
     mainContainerStyle?: import("react-native").ViewStyle | undefined;
     leftIcon?: import("../Icon").PropsOfIcon | undefined;
     rightAction?: import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>> | undefined;
@@ -30,6 +31,7 @@ declare const AppTextInput: import("react").FC<import("react-native").TextInputP
         inputHeight?: number | undefined;
         backgroundColor?: import("react-native").ColorValue | undefined;
         placeholderTextSize?: number | undefined;
+        style?: import("react-native").TextStyle | import("react-native").ViewStyle | undefined;
     }>;
 };
 export default AppTextInput;

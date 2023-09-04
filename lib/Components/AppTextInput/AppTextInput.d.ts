@@ -3,6 +3,7 @@ import { TextStyle, ViewStyle, TextInputProps } from 'react-native';
 import { PropsOfIcon } from '../Icon';
 declare type Props = TextInputProps & {
     inputStyle?: TextStyle | ViewStyle;
+    style?: TextStyle | ViewStyle;
     mainContainerStyle?: ViewStyle;
     leftIcon?: PropsOfIcon;
     rightAction?: ReactElement;

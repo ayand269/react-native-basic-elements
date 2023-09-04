@@ -17,6 +17,7 @@ declare type Props = TextInputProps & {
     inputHeight?: number;
     backgroundColor?: ColorValue;
     placeholderTextSize?: number;
+    style?: TextStyle | ViewStyle;
 };
 declare const AppTextInputOutlined: React.FC<Props>;
 export default AppTextInputOutlined;

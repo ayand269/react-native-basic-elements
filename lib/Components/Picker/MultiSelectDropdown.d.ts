@@ -1,5 +1,5 @@
 import React from 'react';
-import { ViewStyle, TextStyle } from 'react-native';
+import { ViewStyle, TextStyle, ColorValue } from 'react-native';
 import { PropsOfIcon } from '../Icon';
 declare type Props = {
     options: Array<any>;
@@ -17,7 +17,9 @@ declare type Props = {
     onValueChange: (val: Array<any>) => void;
     returnDataType?: (item: any) => any;
     selectedValues: Array<any>;
-    modalHeadingTitle?: TextStyle;
+    modalHeadingTitleStyle?: TextStyle;
+    modalBackgroundColor?: ColorValue;
+    modalHeaderShadow?: boolean;
 };
 declare const MultiSelectDropdown: React.FC<Props>;
 export default MultiSelectDropdown;

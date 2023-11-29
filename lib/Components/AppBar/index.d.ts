@@ -23,6 +23,7 @@ declare const AppBar: import("react").FC<{
     subTitle?: string | undefined;
     subTitleStyle?: import("react-native").TextStyle | undefined;
     onLeftButtonPress?: (() => void) | undefined;
+    rightActionContainerStyle?: import("react-native").ViewStyle | undefined;
 }> & {
     Back: import("react").FC<{
         title?: string | undefined;
@@ -47,6 +48,7 @@ declare const AppBar: import("react").FC<{
         subTitleStyle?: import("react-native").TextStyle | undefined;
         imageTitleContainerStyle?: import("react-native").ViewStyle | undefined;
         leftIconContainerStyle?: import("react-native").ViewStyle | undefined;
+        rightActionContainerStyle?: import("react-native").ViewStyle | undefined;
     }>;
 };
 export default AppBar;

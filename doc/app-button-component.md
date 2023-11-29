@@ -53,6 +53,7 @@ const MyComponent = () => {
 | **`textStyle`**      | This is the style of **`title`**.                                                   | undefined |
 | **`loader`**      | It takes a object of [Loader Props](#loader-props).                           | undefined |
 | **`buttonIcon`**     | It takes a object of [Button Icon Props](#button-icon-props).              | undefined |
+| **`customeElement`**     | It takes a object of [Custom Element Props](#custom-element-props).              | undefined |
 | **`gradient`**       | It defines button accept **`Gradient Color`** or not.                      | false     |
 | **`gradientColors`** | It takes colors array. Ex: ['#4c669f', '#3b5998', '#192f6a']               | []        |
 | **`gradientStart`**  | An optional object of the following type: { x: number, y: number }         | undefined |
@@ -78,3 +79,10 @@ And also it takes all methods and props of **`Pressable`**.
 |-------------------|-------------------------------------------------------------------------------------|-----------|
 | **`position`**    | It defines the position of **`Icon`** respect to **`title`**. It's Required type of **`enum('left' , 'right')  | **`Required`** |
 | **`...props`**    | And it takes all [Icon Props](Icon-component.md#properties)                         |           |
+
+
+## Custom Element Props
+| Props             | Description                                                                         | Default   |
+|-------------------|-------------------------------------------------------------------------------------|-----------|
+| **`position`**    | It defines the position of **`Custom Element`** respect to **`title`**. It's Required type of **`enum('left' , 'right')  | **`Required`** |
+| **`children`**    | And it takes any component                         | **`Required`**  |

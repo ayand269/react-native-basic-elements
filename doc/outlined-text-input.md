@@ -1,10 +1,7 @@
 # Outlined TextInput Component
 This is a TextInput with outlined bordered title with nice animation.
 
-![WhatsApp Video 2023-08-16 at 5 19 35 PM (1)](https://github.com/ayand269/react-native-basic-elements/assets/59437316/f5882dbb-cc4d-4b1b-9da3-c36b7863b279)
-
 ## Example
-
 ```js
 import {AppTextInput, Icon} from 'react-native-basic-elements';
 

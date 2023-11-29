@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { ViewStyle, TextStyle } from 'react-native';
 import { PropsOfIcon } from '../Icon';
 declare type Props = {
@@ -11,6 +11,8 @@ declare type Props = {
     titleStyle?: TextStyle;
     containerStyle?: ViewStyle;
     shadow?: boolean;
+    customElement?: ReactNode;
+    bottomElement?: ReactNode;
 };
-declare const MainAccordion: ({ children, title, leftIcon, style, openIcon, closeIcon, titleStyle, containerStyle, shadow }: Props) => JSX.Element;
+declare const MainAccordion: ({ children, title, leftIcon, style, openIcon, closeIcon, titleStyle, containerStyle, customElement, bottomElement, shadow }: Props) => JSX.Element;
 export default MainAccordion;

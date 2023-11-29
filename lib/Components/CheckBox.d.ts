@@ -8,6 +8,7 @@ interface Props {
     onChange?: (check: boolean) => void;
     size?: number;
     containerStyle?: ViewStyle;
+    inactiveBackgroundColor?: ColorValue;
 }
 declare const CheckBox: React.FC<Props>;
 export default CheckBox;

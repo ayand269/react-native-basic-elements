@@ -259,6 +259,8 @@ export default MyComponent;
 | **`titleStyle`**  | Style for title.                                                                    | undefined |
 | **`containerStyle`** | Style for accordion container                                                    | undefined |
 | **`shadow`**      | If it is **`true`** then accordion has a shadow                                     | false     |
+| **`customElement`**      | You can add custom components from here.                        | undefined     |
+| **`bottomElement`**      | You can add bottom components that is visiable when accordion is opened                        | undefined     |
 
 
 # Accordion-Item
@@ -323,6 +325,49 @@ export default MyComponent;
 | **`style`**       | Style for accordion item container                                                  | undefined |
 | **`leftSpacing`**    | If it is **`true`** then the item take some spacing from left                    | true      |
 
+# Accordion-Custom
+
+## Example
+```js
+import { Accordion } from 'react-native-basic-components';
+
+const MyComponent = () => {
+    return (
+        <Accordion
+            leftIcon={{
+                name: 'home',
+                size: 25
+            }}
+            title='Home'
+            containerStyle={{
+                margin: 10
+            }}
+            shadow={true}
+        >
+            <Accordion.Custom
+                children={<View
+                    style={{
+                        height: 200,
+                        flex: 1,
+                        borderWidth: 1
+                    }}
+                />}
+            />
+        </Accordion>
+    )
+}
+
+export default MyComponent;
+```
+
+## Properties
+
+| Props             | Description                                                                         | Default   |
+|-------------------|-------------------------------------------------------------------------------------|-----------|
+| **`style`**       | Style for accordion item container                                                  | undefined |
+| **`leftSpacing`**    | If it is **`true`** then the item take some spacing from left                    | true      |
+| **`children`**    | This is the custom children                    | **`required`**      |
+
 # Dropdown Picker
 
 ## Select Dropdown
@@ -383,11 +428,10 @@ const MyComponent = () => {
 | **`containerStyle`**  | This is the Style of the input container                            |undefined  |
 | **`iosModalBackGroundColor`** | This is for ios. It change the modal background color.                              |Theme card color  |
 | **`onValueChange`** | Callback that is called when the picker change it's value. Changed item value is passed as a single string argument to the callback handler.              |undefined   |
+| **`dropdownIconColor`** | On Android, specifies color of dropdown triangle.              |undefined   |
 
 
 ## Multi Select Dropdown
-
-![WhatsApp Video 2023-08-16 at 5 19 35 PM](https://github.com/ayand269/react-native-basic-elements/assets/59437316/061fb830-eddf-4fcf-8208-6cc8bdc69689)
 
 ### Example
 ```js
@@ -469,4 +513,3 @@ const MyComponent = () => {
 | **`itemTextStyle`** | This is the Item List text style.                                     |undefined  |
 | **`onValueChange`** | Callback that is called when the picker change it's value. Changed item value is passed as a single string argument to the callback handler.              |undefined   |
 | **`returnDataType`** | Takes an item from **`options`**, and which data type you return that will be give as value in **`onValueChange`**.            |(item) => {return item[valueKey]}   |
-

@@ -30,7 +30,9 @@ declare const Picker: import("react").FC<import("@react-native-picker/picker").P
         onValueChange: (val: any[]) => void;
         returnDataType?: ((item: any) => any) | undefined;
         selectedValues: any[];
-        modalHeadingTitle?: import("react-native").TextStyle | undefined;
+        modalHeadingTitleStyle?: import("react-native").TextStyle | undefined;
+        modalBackgroundColor?: import("react-native").ColorValue | undefined;
+        modalHeaderShadow?: boolean | undefined;
     }>;
 };
 export default Picker;

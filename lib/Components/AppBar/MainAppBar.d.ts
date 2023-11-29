@@ -26,6 +26,7 @@ declare type Props = {
     subTitle?: string;
     subTitleStyle?: TextStyle;
     onLeftButtonPress?: () => void;
+    rightActionContainerStyle?: ViewStyle;
 };
 declare const MainAppBar: React.FC<Props>;
 export default MainAppBar;

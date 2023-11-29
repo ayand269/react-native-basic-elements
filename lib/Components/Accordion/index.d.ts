@@ -1,4 +1,4 @@
-declare const Accordion: (({ children, title, leftIcon, style, openIcon, closeIcon, titleStyle, containerStyle, shadow }: {
+declare const Accordion: (({ children, title, leftIcon, style, openIcon, closeIcon, titleStyle, containerStyle, customElement, bottomElement, shadow }: {
     children?: import("react").ReactNode;
     title?: string | undefined;
     leftIcon?: import("../Icon").PropsOfIcon | undefined;
@@ -8,6 +8,8 @@ declare const Accordion: (({ children, title, leftIcon, style, openIcon, closeIc
     titleStyle?: import("react-native").TextStyle | undefined;
     containerStyle?: import("react-native").ViewStyle | undefined;
     shadow?: boolean | undefined;
+    customElement?: import("react").ReactNode;
+    bottomElement?: import("react").ReactNode;
 }) => JSX.Element) & {
     Item: ({ title, titleStyle, leftSpacing, leftIcon, style, onPress }: {
         title?: string | undefined;
@@ -16,6 +18,12 @@ declare const Accordion: (({ children, title, leftIcon, style, openIcon, closeIc
         leftIcon?: import("../Icon").PropsOfIcon | undefined;
         style?: import("react-native").ViewStyle | undefined;
         onPress?: (() => void) | undefined;
+    }) => JSX.Element;
+    Custom: ({ style, onPress, children, leftSpacing }: {
+        style?: import("react-native").ViewStyle | undefined;
+        onPress?: (() => void) | undefined;
+        children: import("react").ReactNode;
+        leftSpacing?: boolean | undefined;
     }) => JSX.Element;
 };
 export default Accordion;

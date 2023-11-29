@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { ViewStyle, TextStyle, ColorValue, PressableProps } from 'react-native';
 import { PropsOfIcon } from './Icon';
 interface buttonIcon extends PropsOfIcon {
     position: 'left' | 'right';
+}
+interface CustomComponent {
+    position: 'left' | 'right';
+    children: ReactNode;
 }
 interface Props extends PressableProps {
     title?: string;
@@ -35,6 +39,7 @@ interface Props extends PressableProps {
     };
     gradientLocation?: number[];
     onPress?: () => void;
+    customeElement?: CustomComponent;
 }
 declare const AppButton: React.FC<Props>;
 export default AppButton;

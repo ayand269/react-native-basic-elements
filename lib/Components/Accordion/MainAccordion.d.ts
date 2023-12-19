@@ -13,6 +13,7 @@ declare type Props = {
     shadow?: boolean;
     customElement?: ReactNode;
     bottomElement?: ReactNode;
+    inputStyle?: ViewStyle;
 };
-declare const MainAccordion: ({ children, title, leftIcon, style, openIcon, closeIcon, titleStyle, containerStyle, customElement, bottomElement, shadow }: Props) => JSX.Element;
+declare const MainAccordion: ({ children, title, leftIcon, style, openIcon, closeIcon, titleStyle, containerStyle, customElement, bottomElement, shadow, inputStyle }: Props) => JSX.Element;
 export default MainAccordion;

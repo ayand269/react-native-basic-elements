@@ -261,6 +261,7 @@ export default MyComponent;
 | **`closeIcon`**   | It is used for right indicator when accordion is closed                             | 'chevron-down' |
 | **`titleStyle`**  | Style for title.                                                                    | undefined |
 | **`containerStyle`** | Style for accordion container                                                    | undefined |
+| **`inputStyle`** | Style for accordion Input                                                    | undefined |
 | **`shadow`**      | If it is **`true`** then accordion has a shadow                                     | false     |
 | **`customElement`**      | You can add custom components from here.                        | undefined     |
 | **`bottomElement`**      | You can add bottom components that is visiable when accordion is opened                        | undefined     |

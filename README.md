@@ -1,6 +1,9 @@
-# react-native-basic-components
+# react-native-basic-elements
 *Note: This README is only relevant to the latest version of our plugin. If you are using an older version, please switch to the relevant tag on [our GitHub repo](https://github.com/ayand269/react-native-basic-elements) to view the docs for that particular version.*
 This plugin provides basic components of React Native for ***Easy Design*** and smooth experience to your React Native app(s).
+
+*🎉 🎉 🎉Special Announcement: We launch a new package [react-native-basic-element-generator](https://github.com/ayand269/react-native-basic-element-generator) for generating react native project with a pre-defined file structure and some necessary configuration. It is ready to use.🎉 🎉 🎉*
+
 # Table of Contents
 * [Getting Started](#getting-started)
 * [Components](#components)
@@ -258,6 +261,7 @@ export default MyComponent;
 | **`closeIcon`**   | It is used for right indicator when accordion is closed                             | 'chevron-down' |
 | **`titleStyle`**  | Style for title.                                                                    | undefined |
 | **`containerStyle`** | Style for accordion container                                                    | undefined |
+| **`inputStyle`** | Style for accordion Input                                                    | undefined |
 | **`shadow`**      | If it is **`true`** then accordion has a shadow                                     | false     |
 | **`customElement`**      | You can add custom components from here.                        | undefined     |
 | **`bottomElement`**      | You can add bottom components that is visiable when accordion is opened                        | undefined     |

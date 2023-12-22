@@ -22,6 +22,7 @@ declare type Props = {
     modalHeaderShadow?: boolean;
     showHeader?: boolean;
     onValueSelect?: (value: any) => void;
+    inputRightIcon?: PropsOfIcon;
 };
 declare const CustomDropdown: React.FC<Props>;
 export default CustomDropdown;

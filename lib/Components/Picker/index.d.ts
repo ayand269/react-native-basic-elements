@@ -55,6 +55,7 @@ declare const Picker: import("react").FC<import("@react-native-picker/picker").P
         modalHeaderShadow?: boolean | undefined;
         showHeader?: boolean | undefined;
         onValueSelect?: ((value: any) => void) | undefined;
+        inputRightIcon?: import("../Icon").PropsOfIcon | undefined;
     }>;
 };
 export default Picker;

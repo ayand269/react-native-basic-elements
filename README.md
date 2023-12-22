@@ -612,6 +612,7 @@ const MyComponent = () => {
 | **`modalContainerStyle`** | Style for modal container.                                      | undefined |
 | **`modalBackgroundColor`** | Background Color for modal container.                          | '#ffffff  |
 | **`closeIcon`**  | Modal Close Icon. Type of [Icon Props](Icon-component.md#properties)     |undefined  |
+| **`inputRightIcon`**  | Input Right Icon. Type of [Icon Props](Icon-component.md#properties)     |undefined  |
 | **`modalHeading`**  | Heading of the Selection modal                                        |'Choose'   |
 | **`modalHeadingTitle`**  | Heading text style of the Selection modal                        |undefined  |
 | **`modalHeaderShadow`**  | Show the header shadow or not.                                   |true       |

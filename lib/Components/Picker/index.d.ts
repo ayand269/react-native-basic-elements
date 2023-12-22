@@ -34,5 +34,27 @@ declare const Picker: import("react").FC<import("@react-native-picker/picker").P
         modalBackgroundColor?: import("react-native").ColorValue | undefined;
         modalHeaderShadow?: boolean | undefined;
     }>;
+    Custom: import("react").FC<{
+        inputStyle?: import("react-native").ViewStyle | undefined;
+        inputTextStyle?: import("react-native").TextStyle | undefined;
+        selectedValue: string;
+        placeholder?: string | undefined;
+        placeholderColor?: import("react-native").ColorValue | undefined;
+        options: any[];
+        valueKey?: string | undefined;
+        labelKey?: string | undefined;
+        backdropColor?: import("react-native").ColorValue | undefined;
+        backdropOpacity?: number | undefined;
+        backdrop?: boolean | undefined;
+        modalContainerStyle?: import("react-native").ViewStyle | undefined;
+        modalBackgroundColor?: import("react-native").ColorValue | undefined;
+        renderItem: (item: any, index: number, onPress: () => void, isSelected: boolean) => import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>>;
+        closeIcon?: import("../Icon").PropsOfIcon | undefined;
+        modalHeading?: string | undefined;
+        modalHeadingTitleStyle?: import("react-native").TextStyle | undefined;
+        modalHeaderShadow?: boolean | undefined;
+        showHeader?: boolean | undefined;
+        onValueSelect?: ((value: any) => void) | undefined;
+    }>;
 };
 export default Picker;

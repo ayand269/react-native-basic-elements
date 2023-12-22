@@ -1,0 +1,27 @@
+import React, { ReactElement } from 'react';
+import { ColorValue, TextStyle, ViewStyle } from 'react-native';
+import { PropsOfIcon } from '../Icon';
+declare type Props = {
+    inputStyle?: ViewStyle;
+    inputTextStyle?: TextStyle;
+    selectedValue: string;
+    placeholder?: string;
+    placeholderColor?: ColorValue;
+    options: Array<any>;
+    valueKey?: string;
+    labelKey?: string;
+    backdropColor?: ColorValue;
+    backdropOpacity?: number;
+    backdrop?: boolean;
+    modalContainerStyle?: ViewStyle;
+    modalBackgroundColor?: ColorValue;
+    renderItem: (item: any, index: number, onPress: () => void, isSelected: boolean) => ReactElement;
+    closeIcon?: PropsOfIcon;
+    modalHeading?: string;
+    modalHeadingTitleStyle?: TextStyle;
+    modalHeaderShadow?: boolean;
+    showHeader?: boolean;
+    onValueSelect?: (value: any) => void;
+};
+declare const CustomDropdown: React.FC<Props>;
+export default CustomDropdown;

@@ -40,6 +40,7 @@ After installing react-native-vector-icons you have to configure it. Read the co
     * [Select Dropdown](#select-dropdown)
     * [Multi Select Dropdown](#multi-select-dropdown)
     * [Custom Select Dropdown](#custom-select-dropdown)
+    * [Outline Select Dropdown](#outline-select-dropdown)
 * [Text Components](#text-components)
     * [Text](#text)
     * [Heading](#heading--subheading)
@@ -620,3 +621,112 @@ const MyComponent = () => {
 | **`onValueSelect`** | Callback that is called when the picker change it's value. Changed item value is passed as a single string argument to the callback handler.              |undefined   |
 | **`renderItem`** | It's a function. From it, you should return a **`ReactElement`** that will show in the modal as an item.              |undefined   |
 
+
+<!-- Shivam add on -->
+
+## Outline Select Dropdown
+### Example
+```js
+import {Picker} from 'react-native-basic-components';
+
+const MyComponent = () => {
+    const [dropdownValue, setDropdownValue] = useState([]);
+    return (
+        <Picker.Outline
+            selectedValue={dropdownValue}
+            options={[
+                {
+                    label: 'Item 1',
+                    value: 'item1'
+                },
+                {
+                    label: 'Item 2',
+                    value: 'item2'
+                },
+                {
+                    label: 'Item 3',
+                    value: 'item3'
+                },
+                {
+                    label: 'Item 4',
+                    value: 'item4'
+                },
+                {
+                    label: 'Item 5',
+                    value: 'item5'
+                },
+                {
+                    label: 'Item 6',
+                    value: 'item6'
+                },
+                {
+                    label: 'Item 7',
+                    value: 'item7'
+                },
+                {
+                    label: 'Item 8',
+                    value: 'item8'
+                },
+                {
+                    label: 'Item 9',
+                    value: 'item9'
+                },
+                {
+                    label: 'Item 10',
+                    value: 'item10'
+                },
+            ]}
+            placeholder='Dropdown'
+            renderItem={(item, index, onPress, isSelected) => {
+                return (
+                    <Pressable
+                        style={{
+                            height: 50,
+                            justifyContent: 'center',
+                            paddingHorizontal: 10,
+                            backgroundColor: isSelected ? 'green' : undefined
+                        }}
+                        onPress={onPress}
+                    >
+                        <Text>{item['label']}</Text>
+                    </Pressable>
+                )
+            }}
+            onValueSelect={setDropdownValue}
+        />
+    )
+}
+```
+
+## Properties
+
+| Props             | Description                                                                         | Default   |
+|-------------------|-------------------------------------------------------------------------------------|-----------|
+| **`inputStyle`** | Style for dropdown input.                                                | undefined |
+| **`borderWidth`** | Style for border width  .                                               |     1     |
+| **`inputTextStyle`** | Text Style of dropdown input.                                        | undefined |
+| **`selectedValue`**    | It takes the defalut value(Required)                               |''         |
+| **`placeholder`**  | Placeholder for the Picker Input                                       | undefined |
+| **`activeBorderColor`**  | This is the color of the input border when the input is Focused                                       | 'blue' |
+| **`inactiveBorderColor`**  | This is the color of the input border when the input is not Focused                                       | '#000' |
+| **`placeholderColor`**  | Color for picker placeholder.                                     | '#999'    |
+| **`placeholderTextStyle`**  | This is tha style for styling the **`placeholder`** text.                                     | '#999'    |
+| **`options`**     | It takes an **`Array`** as options for the picker.                      | []        |
+| **`labelKey`**    | It takes that key as the lebel key from **`options`** Array             |'label'    |
+| **`valueKey`**    | It takes that key as the value key from **`options`** Array             |'value'    |
+| **`backdropColor`**    | It is the color of backdrop.                                       |'#000000'  |
+| **`backdropOpacity`**    | It is opacity of the color of backdrop.                          |0.5        |
+| **`backdrop`**    | It takes a **`boolean`** value to ensure that backdrop is shown or not  |true       |
+| **`modalContainerStyle`** | Style for modal container.                                      | undefined |
+| **`modalBackgroundColor`** | Background Color for modal container.                          | '#ffffff  |
+| **`containerStyle`** | It is the style of the whole container including.                         | none |
+| **`closeIcon`**  | Modal Close Icon. Type of [Icon Props](Icon-component.md#properties)     |undefined  |
+| **`inputRightIcon`**  | Input Right Icon. Type of [Icon Props](Icon-component.md#properties)     |undefined  |
+| **`modalHeading`**  | Heading of the Selection modal                                        |'Choose'   |
+| **`modalHeadingTitle`**  | Heading text style of the Selection modal                        |undefined  |
+| **`modalHeaderShadow`**  | Show the header shadow or not.                                   |true       |
+| **`placeholderTextSize`**  | Show the header shadow or not.                                   |18       |
+| **`showHeader`**  | Show the header or not.                                                 |true       |
+| **`modalHeadingTitleStyle`**  | It is the style of **`Modal Heading`**.                                                 |undefine       |
+| **`onValueSelect`** | Callback that is called when the picker change it's value. Changed item value is passed as a single string argument to the callback handler.              |undefined   |
+| **`renderItem`** | It's a function. From it, you should return a **`ReactElement`** that will show in the modal as an item.              |undefined   |
